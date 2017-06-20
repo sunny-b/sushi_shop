@@ -1,10 +1,11 @@
+{{#if items}}
 <ul>
   {{#each items}}
   <li data-id="{{id}}">
     <figure>
       <img src="{{cover}}" alt="cart-item">
     </figure>
-    <p>{{quantity}} x ${{price}}</p>
+    <p>{{quantity}} x ${{format_price price}}</p>
   </li>
   {{/each}}
 </ul>
@@ -17,3 +18,4 @@
     --><a class="right checkout" href="/checkout">Checkout</a>
   </footer>
 </section>
+{{/if}}
