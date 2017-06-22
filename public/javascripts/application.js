@@ -1,28 +1,22 @@
 var App = {
   templates: JST,
   $content: $('#content'),
-  renderMenu: function() {
-    new MenuView({
-      collection: this.menu_items,
-      cart: this.cart
-    });
-  },
+  $cart: $('#cart'),
+  renderMenu: function() { new MenuView({ collection: this.menu_items })},
   createCart: function() {
     this.cart = new CartItems();
-    this.cart.view = new CartView({
+    new CartView({
       collection: this.cart
     });
 
-    this.cart.header = new HeaderView({
+    new HeaderView({
       collection: this.cart
     });
   },
-  itemDetail: function(id) {
+  itemNutrition: function(id) {
     var model = this.menu_items.get(+id);
 
-    new ItemView({
-      model: model
-    });
+    new NutritionView({ model: model });
   },
   nextItem: function(id) {
     var length = this.menu_items.length;
@@ -35,10 +29,16 @@ var App = {
 
     router.navigate('menu/' + previousID, { trigger: true });
   },
+  renderCheckout: function() {
+    new CheckoutView({
+      collection: this.cart
+    });
+  },
   bindEvents: function() {
     _.extend(this, Backbone.Events);
     this.on('next_item', this.nextItem.bind(this));
     this.on('prev_item', this.prevItem.bind(this));
+    this.on('add_cart', this.cart.addItem.bind(this.cart));
   },
   init: function() {
     this.createCart();

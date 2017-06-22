@@ -23,7 +23,7 @@ html(lang="en-US")
     +javascript_script_tag('application')
     +javascript_script_tag('models/item')
     +javascript_script_tag('collections/items', 'collections/cart_items')
-    +javascript_script_tag('views/menu', 'views/cart', 'views/header', 'views/item')
+    +javascript_script_tag('views/menu', 'views/cart', 'views/header', 'views/menuItem', 'views/checkout', 'views/nutrition')
     script(type="text/javascript").
       App.menu_items = new MenuItems(!{JSON.stringify(items)});
     +javascript_script_tag('router')

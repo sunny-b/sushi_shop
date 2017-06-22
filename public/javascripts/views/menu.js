@@ -1,27 +1,17 @@
 var MenuView = Backbone.View.extend({
-  template: App.templates.menu,
-  events: {
-    'click li[data-id]': 'menuItem'
-  },
-  el: $('#content').get(0),
-  renderMenu: function() {
-    this.$el.html(this.template({
-      menu_items: this.collection.toJSON()
-    }));
+  tagName: 'ul',
+  id: 'items',
+  render: function() {
+    var self = this;
 
-    if (this.cart.length < 1) {
-      $('#cart').slideUp();
-    }
-  },
-  menuItem: function(e) {
-    e.preventDefault();
+    this.collection.each(function(model) {
+      var item = new MenuItemView({ model: model });
+      self.$el.append(item.el);
+    });
 
-    var id = $(e.currentTarget).closest('li').data('id');
-
-    App.itemDetail(id);
+    App.$content.html(this.$el);
   },
   initialize: function(options) {
-    this.cart = options.cart
-    this.renderMenu();
+    this.render();
   }
 });

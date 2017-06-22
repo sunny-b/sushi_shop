@@ -10,7 +10,7 @@
     "sugar": 0.3738,
     "name": "Sashimi salad",
     "price": 12,
-    "cover": "images/sashimi-salad.jpg"
+    "cover": "/images/sashimi-salad.jpg"
   }, {
     "id": 2,
     "description": "Sushi bar variety with sushi rice.",
@@ -22,7 +22,7 @@
     "sugar": 0.3114,
     "name": "Chirashi sushi",
     "price": 21,
-    "cover": "images/chirashi-sushi.jpg"
+    "cover": "/images/chirashi-sushi.jpg"
   }, {
     "id": 3,
     "description": "A nice seaweed salad.",
@@ -34,7 +34,7 @@
     "sugar": 0.0037,
     "name": "Seaweed salad",
     "price": 17,
-    "cover": "images/seaweed-salad.jpg"
+    "cover": "/images/seaweed-salad.jpg"
   }, {
     "id": 4,
     "description": "Boiled soy beans with salt.",
@@ -46,7 +46,7 @@
     "sugar": 0.1028,
     "name": "Edamame",
     "price": 4,
-    "cover": "images/edamame.jpg"
+    "cover": "/images/edamame.jpg"
   }, {
     "id": 5,
     "description": "Soy bean soup with Wacame seaweed, tofu and spring onion.",
@@ -58,7 +58,7 @@
     "sugar": 0.1399,
     "name": "Miso soup",
     "price": 4,
-    "cover": "images/miso-soup.jpg"
+    "cover": "/images/miso-soup.jpg"
   }, {
     "id": 6,
     "description": "Tuna pieces.",
@@ -70,7 +70,7 @@
     "sugar": 0.4018,
     "name": "Maguro",
     "price": 12.5,
-    "cover": "images/maguro.jpg"
+    "cover": "/images/maguro.jpg"
   }, {
     "id": 7,
     "description": "",
@@ -82,7 +82,7 @@
     "sugar": 0.245,
     "name": "Shake",
     "price": 10,
-    "cover": "images/shake.jpg"
+    "cover": "/images/shake.jpg"
   }, {
     "id": 8,
     "description": "White fish pieces",
@@ -94,7 +94,7 @@
     "sugar": 0.0509,
     "name": "Shiromi",
     "price": 9.5,
-    "cover": "images/shiromi.jpg"
+    "cover": "/images/shiromi.jpg"
   }, {
     "id": 9,
     "description": "Tuna roll with wasabi. - 6 pieces",
@@ -106,7 +106,7 @@
     "sugar": 0.4771,
     "name": "Tekka maki",
     "price": 6,
-    "cover": "images/tekka-maki.jpg"
+    "cover": "/images/tekka-maki.jpg"
   }, {
     "id": 10,
     "description": "Tuna pieces.",
@@ -118,7 +118,7 @@
     "sugar": 0.4839,
     "name": "Hosomaki Mix",
     "price": 17,
-    "cover": "images/hosomaki-mix.jpg"
+    "cover": "/images/hosomaki-mix.jpg"
   }, {
     "id": 11,
     "description": "Crab sticks, avocado and cucumber. - 8 pieces",
@@ -130,7 +130,7 @@
     "sugar": 0.0174,
     "name": "California rolls",
     "price": 7.75,
-    "cover": "images/california-rolls.jpg"
+    "cover": "/images/california-rolls.jpg"
   }, {
     "id": 12,
     "description": "Smoked salmon. Cucumber. Cream cheese.",
@@ -142,7 +142,7 @@
     "sugar": 0.2533,
     "name": "Seattle rolls",
     "price": 8,
-    "cover": "images/seattle-rolls.jpg"
+    "cover": "/images/seattle-rolls.jpg"
   }, {
     "id": 13,
     "description": "Spicy tuna, spring onion and avocado. - 6 pieces",
@@ -154,7 +154,7 @@
     "sugar": 0.0474,
     "name": "Spicy Tuna rolls",
     "price": 6,
-    "cover": "images/spicytuna-rolls.jpg"
+    "cover": "/images/spicytuna-rolls.jpg"
   }, {
     "id": 14,
     "description": "King prawns, avocado and asparagus. - 8 pieces",
@@ -166,7 +166,7 @@
     "sugar": 0.439,
     "name": "Ebi rolls",
     "price": 8,
-    "cover": "images/ebi-rolls.jpg"
+    "cover": "/images/ebi-rolls.jpg"
   }, {
     "id": 15,
     "description": "Sauted chicken with teriyaki sauce.",
@@ -178,7 +178,7 @@
     "sugar": 0.4271,
     "name": "Chicken Teriyaki",
     "price": 12,
-    "cover": "images/chicken-teriyaki.jpg"
+    "cover": "/images/chicken-teriyaki.jpg"
   }, {
     "id": 16,
     "description": "Sauted salmon with teriyaki sauce.",
@@ -190,7 +190,7 @@
     "sugar": 0.1158,
     "name": "Salmon Teriyaki",
     "price": 13,
-    "cover": "images/salmon-teriyaki.jpg"
+    "cover": "/images/salmon-teriyaki.jpg"
   }, {
     "id": 17,
     "description": "Steamed rice.",
@@ -202,7 +202,7 @@
     "sugar": 0.3426,
     "name": "Gohan",
     "price": 3,
-    "cover": "images/gohan.jpg"
+    "cover": "/images/gohan.jpg"
   }, {
     "id": 18,
     "description": "Pan-fried chicken breast with yasai salad.",
@@ -214,7 +214,7 @@
     "sugar": 0.0161,
     "name": "Tori Katsu",
     "price": 11,
-    "cover": "images/tori-katsu.jpg"
+    "cover": "/images/tori-katsu.jpg"
   }, {
     "id": 19,
     "description": "Udon noodles with chicken, king prawns and vegetables",
@@ -226,6 +226,6 @@
     "sugar": 0.1798,
     "name": "Yaki Udon",
     "price": 11.5,
-    "cover": "images/yaki-udon.jpg"
+    "cover": "/images/yaki-udon.jpg"
   }
 ]

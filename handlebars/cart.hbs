@@ -1,4 +1,3 @@
-{{#if items}}
 <ul>
   {{#each items}}
   <li data-id="{{id}}">
@@ -11,11 +10,10 @@
 </ul>
 <section>
   <h3>Your<br>shopping cart</h3>
-  <p class="total">${{total}}</p>
+  <p class="total">${{format_price total}}</p>
   <p></p>
   <footer>
     <a class="left empty_cart" href="#">Empty cart</a><!--
     --><a class="right checkout" href="/checkout">Checkout</a>
   </footer>
 </section>
-{{/if}}

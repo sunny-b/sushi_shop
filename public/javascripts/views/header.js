@@ -8,5 +8,6 @@ var HeaderView = Backbone.View.extend({
   },
   initialize: function() {
     this.render();
+    this.listenTo(this.collection, 'cart_updated empty update_checkout', this.render);
   }
 });
