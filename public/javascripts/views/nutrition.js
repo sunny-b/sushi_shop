@@ -1,8 +1,7 @@
 var NutritionView = Backbone.View.extend({
   template: App.templates.nutrition,
   events: {
-    'click .next': 'nextItem',
-    'click .prev': 'prevItem',
+    'click .nav': 'changeItem',
     'click .add_cart': 'addToCart'
   },
   id: 'item_details',
@@ -13,16 +12,20 @@ var NutritionView = Backbone.View.extend({
     this.$('[data-id] figure, article, aside').animate({ opacity: '1'}, 50);
     router.navigate('menu/' + this.currentId, { trigger: true });
   },
-  nextItem: function(e) {
-    var self = this;
-    this.$('[data-id] figure, article, aside').animate({ opacity: '0.05' }, 100, function() {
-      App.trigger('next_item', self.currentId);
-    });
+  changeItem: function(e) {
+    e.preventDefault();
+
+    if ($(e.target).hasClass('next')) {
+      this.triggerFade('next_item');
+    } else {
+      this.triggerFade('prev_item');
+    }
   },
-  prevItem: function(e) {
+  triggerFade: function(event) {
     var self = this;
+    
     this.$('[data-id] figure, article, aside').animate({ opacity: '0.05' }, 100, function() {
-      App.trigger('prev_item', self.currentId);
+      App.trigger(event, self.currentId);
     });
   },
   addToCart: function(e) {
