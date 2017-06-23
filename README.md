@@ -10,6 +10,6 @@ And
 
       $ npm start
 
-The only entry point is "http://localhost:3000/index.html".
+The only entry point is http://localhost:3000/index.html
 
 Enjoy
