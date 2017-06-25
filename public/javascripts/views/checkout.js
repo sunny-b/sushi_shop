@@ -37,7 +37,6 @@ var CheckoutView = Backbone.View.extend({
   },
   initialize: function() {
     this.render();
-    App.$content.html(this.$el);
-    App.$cart.hide();
+    App.trigger('render_checkout_html', this.$el);
   }
 });
