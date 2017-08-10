@@ -43,7 +43,7 @@ var App = {
     this.on('next_item', this.nextItem.bind(this));
     this.on('prev_item', this.prevItem.bind(this));
     this.on('add_cart', this.cart.addItem.bind(this.cart));
-    this.on('render_checkout_html', this..bind(this));
+    this.on('render_checkout_html', this.bind(this));
   },
   init: function() {
     this.createCart();
